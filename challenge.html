@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Advanced form</title>
+    <link href="challenge.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<form>
+    <label for="formula">Formula:</label>
+    <input id="formula" name="formula" list="trig">
+    <datalist id="trig">
+        <option>sin</option>
+        <option>cos</option>
+        <option>tan</option>
+        <option>cot</option>
+    </datalist>
+    <br />
+    <label for="iterations">Iterations:</label>
+    <input id="iterations" type="range" name="iterations" min="1" max="10"><br />
+    <label for="precision">Precision:</label>
+    <input id="precision" type="number" name="precision" min="1" max="100"><br />
+</form>
+<div>
+    <h1>CUSTOMER REVIEWS</h1>
+    <div id="reviews">
+        <div class="arrowLt" id="arrowLt">&laquo</div>
+        <div id="page-marker" class="page-marker"></div>
+    </div>
+</div>
+<script src="challenge.js" type="application/javascript"></script>
+</body>
+</html>

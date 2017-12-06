@@ -1,0 +1,56 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+#reviews{
+    display:inline-grid;
+    grid: 100px 100px 50px / 100px 50px 500px 50px 500px 50px 100px;
+    margin: auto;
+    width: 80%;
+}
+article{
+    border: solid black 1px;
+    position: relative;
+    padding: 5px;
+}
+.grid-item-1{
+    grid-area: 1/3/3/4;
+}
+.grid-item-2{
+    grid-area: 1/5/3/6;
+}
+.arrowLt{
+    grid-area: 2/2/2/2;
+    text-align: left;
+    font-size: 2rem;
+}
+.arrowRt{
+    grid-area: 2/6/2/7;
+    text-align: right;
+    font-size: 2rem;
+}
+.rating{
+    color:lawngreen;
+    font-size: 2rem;
+}
+h1{
+    text-align: center;
+}
+.date{
+    position: absolute;
+    bottom: 10px;
+}
+.hide{
+    display:none;
+}
+.page-marker{
+    color: darkgrey;
+    width: 100%;
+    grid-area: 3/1/3/8;
+    font-size: 2rem;
+    text-align: center;
+}
+.current-marker{
+    color: forestgreen;
+}
